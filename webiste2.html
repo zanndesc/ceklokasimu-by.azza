@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>proker baru azza</title>
+  <link rel="stylesheet" href="kapten.css" />
+  <!-- ini stylesheet untuk Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>gwa ada dmn yh </h1>
+    <p class="small">klik tombol di bawah, beri izin lokasi di browser. santai aja gwa cmn nyoba buat ginian doang, gbs ngelacak lokasi kalian</p>
+
+    <div class="controls">
+      <button id="btn-get">dapetin lokasi mu skrg</button>
+      <button id="btn-reset" class="secondary">reset</button>
+    </div>
+
+    <div class="info">
+      <div class="box">
+        <div>status</div>
+        <div id="status">menunggu aksi</div>
+      </div>
+      <div class="box">
+        <div>koordinat</div>
+        <div class="coords" id="coords">- , -</div>
+      </div>
+      <div class="box">
+        <div>akurasi perkiraan</div>
+        <div id="accuracy">- meter</div>
+      </div>
+    </div>
+
+    <div class="map-wrap" id="mapwrap">
+      <div id="map"></div>
+    </div>
+
+    <div class="note">
+      santai aja ini beneran punya azza, gamungkin azza ngelacak lokasi kalian, gasopan
+    </div>
+  </div>
+
+  <!-- script untuk Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

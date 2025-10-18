@@ -1,0 +1,108 @@
+:root{
+  --bg:#0f1720;
+  --card:#0b1220;
+  --accent:#06b6d4;
+  --accent2:#3b82f6;
+  --text:#e6eef6;
+  --danger:#ef4444;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg,var(--bg),#071029 120%);
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.card{
+  width:100%;
+  max-width:760px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.04);
+  padding:18px;
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
+  transition: all .3s ease;
+}
+.card:hover {
+  box-shadow: 0 10px 30px rgba(6,182,212,0.15);
+}
+
+h1{margin:0 0 8px;font-size:22px}
+p.small{margin:0 0 16px;color:rgba(230,238,246,0.7)}
+
+.controls{
+  display:flex;
+  gap:10px;
+  margin-bottom:12px;
+}
+button{
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color:#fff;
+  border:0;
+  padding:10px 16px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  font-size:15px;
+  transition: all .2s ease;
+  box-shadow: 0 3px 8px rgba(6,182,212,0.3);
+}
+button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(6,182,212,0.4);
+}
+button:active{
+  transform: scale(0.97);
+}
+button.secondary{
+  background:linear-gradient(90deg, #444, #222);
+  color:#ddd;
+  border:1px solid rgba(255,255,255,0.1);
+  box-shadow:none;
+}
+button.secondary:hover{
+  background:linear-gradient(90deg, #555, #333);
+  color:#fff;
+}
+
+.info{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:12px;
+}
+.box{
+  background:rgba(255,255,255,0.02);
+  padding:9px;
+  border-radius:8px;
+  min-width:160px;
+  flex:1;
+  border:1px solid rgba(255,255,255,0.05);
+}
+.coords{font-family:monospace; font-size:14px; color:var(--accent)}
+
+.map-wrap{
+  height:420px;
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.03);
+  margin-top:10px;
+}
+#map{
+  width:100%;
+  height:100%;
+}
+
+.note{
+  margin-top:12px;
+  color:rgba(230,238,246,0.6);
+  font-size:16px;
+  text-align:center;
+}
