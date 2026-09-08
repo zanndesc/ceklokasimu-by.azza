@@ -37,11 +37,11 @@ btn.addEventListener('click', () => {
 
     if (marker) marker.remove();
     marker = L.marker([lat, lon]).addTo(map)
-      .bindPopup("noh lu lagi disitu")
-      .openPopup("eissss");
+      .bindPopup("kamu sedang berada di sini")
+      
 
   }, (err) => {
-    showStatus('ituloh dipencet yang izinkan: ' + (err.message || err.code));
+    showStatus('pencet yang izinkan: ' + (err.message || err.code));
   }, {
     enableHighAccuracy: true,
     timeout: 15000,
